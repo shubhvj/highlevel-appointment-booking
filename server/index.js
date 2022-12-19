@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const app = Express();
 const cors = require('cors');
 var corsOptions = {
-    origin: 'http://localhost:8080',
+    origin: 'https://candid-choux-5a3149.netlify.app/',
     optionsSuccessStatus: 200
   }
 app.use(cors(corsOptions));
