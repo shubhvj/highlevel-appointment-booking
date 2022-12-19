@@ -21,3 +21,9 @@ Project setup doesn't require anything. .env file is added for this DEMO.
 
 for client - run 'npm run serve'
 for servr - run 'npm run dev' or 'npm start' - nodemon is used for DEV.
+
+***********************************************************************************************************************************************************
+NOTE - RANGE picker is not added. Although the endpoint for fetching the events within a range is added. 3rd Endpoint mentioned at the top is the one.
+Timezone funcitonality is not supported for this project.
+***********************************************************************************************************************************************************
+
