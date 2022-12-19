@@ -158,7 +158,7 @@ export default {
         async createEvent(value) {
             try {
                 let date = moment(this.date).format("YYYY-MM-DD");
-                let res = await fetch('http://localhost:3001/', {
+                let res = await fetch(`${process.env.VUE_APP_API_URL}`, {
                     method: "POST",
                     headers: {
                         'Accept': 'application/json',
@@ -180,7 +180,7 @@ export default {
         async apiCall() {
             this.isNoAppointment = false;
             const timeInSeconds = this.date.getTime();
-            let res = await fetch(`http://localhost:3001/slots?startDate=${timeInSeconds}&timezone=${this.timezone}`).then(response => {
+            let res = await fetch(`${process.env.VUE_APP_API_URL}slots?startDate=${timeInSeconds}&timezone=${this.timezone}`).then(response => {
                 return response.json()
             });
             this.slotData = res;
