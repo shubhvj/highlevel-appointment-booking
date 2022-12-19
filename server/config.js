@@ -15,7 +15,7 @@ const {
 } = process.env;
 
 module.exports = {
-    port: PORT,
+    port: PORT || 3000,
     firebaseConfig: {
         apiKey: API_KEY,
         authDomain: AUTH_DOMAIN,
