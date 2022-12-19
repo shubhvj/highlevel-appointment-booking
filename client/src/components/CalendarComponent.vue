@@ -192,7 +192,6 @@ export default {
                 }
             });
             this.currentDaySlots = this.currentDaySlots.slots;
-            console.log(this.currentDaySlots);
             this.setIsAppointment();
         },
         setIsAppointment() {
