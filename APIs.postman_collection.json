@@ -1,0 +1,97 @@
+{
+	"info": {
+		"_postman_id": "1d6f3f33-528d-451d-86dd-a8128668ce7e",
+		"name": "APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23306059"
+	},
+	"item": [
+		{
+			"name": "Get Events in range",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/events?startDate=1671439748156&endDate=1672425000000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"events"
+					],
+					"query": [
+						{
+							"key": "startDate",
+							"value": "1671439748156"
+						},
+						{
+							"key": "endDate",
+							"value": "1672425000000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Appointment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"date\": \"2022-14-27\",\n        \"slot\": [\n            \"12:30\"\n        ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Free Slots",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/slots?startDate=1671421971662&endDate=1675103400000&timezone",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"slots"
+					],
+					"query": [
+						{
+							"key": "startDate",
+							"value": "1671421971662"
+						},
+						{
+							"key": "endDate",
+							"value": "1675103400000"
+						},
+						{
+							"key": "timezone",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
