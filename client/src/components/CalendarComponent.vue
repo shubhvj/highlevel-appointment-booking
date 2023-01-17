@@ -18,6 +18,7 @@
         <option v-for="(value, key) in this.timezones" :key="key">{{ value }}</option>
     </select>
     <h3>Current Date selected: {{ this.currentDate }}</h3>
+    <p>backend server is down right now.</p>
     <h4 v-if="isNoAppointment">No Appointment slots available for selected Date: {{ this.currentDate }}</h4>
     <footer class="footer"><a href="https://shubhjohri.netlify.app/">made by Shubh </a></footer>
 </template>
